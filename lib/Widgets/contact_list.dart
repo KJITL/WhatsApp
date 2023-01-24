@@ -9,16 +9,15 @@ class ContactList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-      shrinkWrap: true,
       itemCount: info.length,
       itemBuilder: (context, int index) {
-        return InkWell(
-          onTap: () {},
-          child: Padding(
-            padding: const EdgeInsets.fromLTRB(0, 6, 0, 6),
-            child: Column(
-              children: [
-                ListTile(
+        return Column(
+          children: [
+            InkWell(
+              onTap: () {},
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(0, 6, 0, 6),
+                child: ListTile(
                   title: Text(info[index]['name'].toString(),
                       style: const TextStyle(fontSize: 18)),
                   subtitle: Text(info[index]['message'].toString(),
@@ -31,13 +30,13 @@ class ContactList extends StatelessWidget {
                   trailing: Text(info[index]['time'].toString(),
                       style: const TextStyle(fontSize: 13, color: Colors.grey)),
                 ),
-                const Divider(
-                  color: dividerColor,
-                  indent: 85,
-                ),
-              ],
+              ),
             ),
-          ),
+            const Divider(
+              color: dividerColor,
+              indent: 85,
+            ),
+          ],
         );
       },
     );
