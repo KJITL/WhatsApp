@@ -9,6 +9,7 @@ class ContactList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
+      shrinkWrap: true,
       itemCount: info.length,
       itemBuilder: (context, int index) {
         return Column(

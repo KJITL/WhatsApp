@@ -10,9 +10,19 @@ class WebScreenLayout extends StatelessWidget {
       body: Row(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          const Expanded(
-            child: ContactList(),
+          // left side
+          Expanded(
+            child: SingleChildScrollView(
+              child: Column(
+                children: const [
+                  //profile bar
+                  //search bar
+                  ContactList(),
+                ],
+              ),
+            ),
           ),
+          // Right chat background
           Container(
             width: MediaQuery.of(context).size.width * 0.75,
             decoration: const BoxDecoration(
