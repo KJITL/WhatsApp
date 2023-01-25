@@ -10,11 +10,16 @@ class HisMessageCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.all(10),
-      color: Colors.red,
-      width: MediaQuery.of(context).size.width * 0.2,
+    return Align(
+      alignment: Alignment.centerLeft,
       child: Text("$hisText ,at: $hisTime"),
     );
   }
 }
+
+// Container(
+//       padding: const EdgeInsets.all(10),
+//       color: Colors.red,
+//       width: MediaQuery.of(context).size.width * 0.2,
+//       child: Text("$hisText ,at: $hisTime"),
+//     );
