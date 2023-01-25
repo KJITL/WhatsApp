@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:whastapp/Widgets/contact_list.dart';
 
+import '../Widgets/web_profile.dart';
+import '../Widgets/web_search_bar.dart';
+
 class WebScreenLayout extends StatelessWidget {
   const WebScreenLayout({super.key});
 
@@ -15,8 +18,8 @@ class WebScreenLayout extends StatelessWidget {
             child: SingleChildScrollView(
               child: Column(
                 children: const [
-                  //profile bar
-                  //search bar
+                  WebProfileBar(),
+                  SearchBar(),
                   ContactList(),
                 ],
               ),
