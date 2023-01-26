@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:whastapp/data/colors.dart';
 
 import 'package:whastapp/data/info.dart';
+import 'package:whastapp/screens/mobile_chat_screen.dart';
 
 class ContactList extends StatelessWidget {
   const ContactList({super.key});
@@ -15,7 +16,16 @@ class ContactList extends StatelessWidget {
         return Column(
           children: [
             InkWell(
-              onTap: () {},
+              onTap: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => MobileChatPage(
+                      userName: info[index]['name'].toString(),
+                      userPhoto: info[index]['profilePic'].toString(),
+                    ),
+                  ),
+                );
+              },
               child: Padding(
                 padding: const EdgeInsets.fromLTRB(0, 6, 0, 6),
                 child: ListTile(
