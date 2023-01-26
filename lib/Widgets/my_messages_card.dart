@@ -4,7 +4,7 @@ import 'package:whastapp/colors.dart';
 class MyMessageCard extends StatelessWidget {
   final String myText;
   final String myTime;
-  const MyMessageCard({
+  const MyMessageCard({super.key, 
     required this.myText,
     required this.myTime,
   });

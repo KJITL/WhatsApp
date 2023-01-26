@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class HisMessageCard extends StatelessWidget {
   final String hisText;
   final String hisTime;
-  const HisMessageCard({
+  const HisMessageCard({super.key, 
     required this.hisText,
     required this.hisTime,
   });

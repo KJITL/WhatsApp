@@ -38,7 +38,6 @@ class WebScreenLayout extends StatelessWidget {
             ),
             child: Column(
               children: const [
-                //app chat bar
                 WebChatBar(),
                 ChatList(),
               ],
