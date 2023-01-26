@@ -15,7 +15,7 @@ class WebScreenLayout extends StatelessWidget {
       body: Row(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          // left side
+          // left side "Contact list with its bar"
           Expanded(
             child: SingleChildScrollView(
               child: Column(
