@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:whastapp/colors.dart';
+import 'package:whastapp/data/colors.dart';
 
-import '../info.dart';
+import '../../data/info.dart';
 
 class WebChatBar extends StatelessWidget {
   const WebChatBar({super.key});

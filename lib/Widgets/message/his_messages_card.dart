@@ -3,16 +3,17 @@ import 'package:flutter/material.dart';
 class HisMessageCard extends StatelessWidget {
   final String hisText;
   final String hisTime;
-  const HisMessageCard({super.key, 
+  const HisMessageCard({
+    super.key,
     required this.hisText,
     required this.hisTime,
   });
 
   @override
   Widget build(BuildContext context) {
-    return Align(
+    return const Align(
       alignment: Alignment.centerLeft,
-      child: Text("$hisText ,at: $hisTime"),
+      child: null,
     );
   }
 }

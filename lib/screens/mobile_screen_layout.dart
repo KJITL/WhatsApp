@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:whastapp/colors.dart';
+import 'package:whastapp/data/colors.dart';
 
-import '../Widgets/contact_list.dart';
+import '../Widgets/both/contact_list.dart';
 
 class MobileScreenLayout extends StatelessWidget {
   const MobileScreenLayout({super.key});

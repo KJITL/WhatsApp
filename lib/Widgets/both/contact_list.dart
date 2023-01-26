@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:whastapp/colors.dart';
+import 'package:whastapp/data/colors.dart';
 
-import 'package:whastapp/info.dart';
+import 'package:whastapp/data/info.dart';
 
 class ContactList extends StatelessWidget {
   const ContactList({super.key});

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:whastapp/responsive/responsive_layout.dart';
-import 'colors.dart';
+import 'data/colors.dart';
 import 'screens/mobile_screen_layout.dart';
 import 'screens/web_screen_layout.dart';
 
