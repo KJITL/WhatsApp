@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:whastapp/Widgets/both/chat_list.dart';
 import 'package:whastapp/Widgets/both/contact_list.dart';
 
+import '../Widgets/webs/input_chat_web.dart';
 import '../Widgets/webs/web_chat_bar.dart';
 import '../Widgets/webs/web_profile.dart';
 import '../Widgets/webs/web_search_bar.dart';
@@ -40,6 +41,7 @@ class WebScreenLayout extends StatelessWidget {
               children: const [
                 WebChatBar(),
                 ChatList(),
+                InputChatWeb(),
               ],
             ),
           )
