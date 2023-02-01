@@ -23,7 +23,7 @@ class WebScreenLayout extends StatelessWidget {
                 children: const [
                   WebProfileBar(),
                   SearchBar(),
-                  ContactList(),
+                  ContactList(isMobile: false),
                 ],
               ),
             ),

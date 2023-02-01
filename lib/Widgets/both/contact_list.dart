@@ -5,7 +5,8 @@ import 'package:whastapp/data/info.dart';
 import 'package:whastapp/screens/mobile_chat_screen.dart';
 
 class ContactList extends StatelessWidget {
-  const ContactList({super.key});
+  final bool isMobile;
+  const ContactList({super.key, required this.isMobile});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +18,8 @@ class ContactList extends StatelessWidget {
           children: [
             InkWell(
               onTap: () {
-                Navigator.of(context).push(
+                if(isMobile){
+                  Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (context) => MobileChatPage(
                       userName: info[index]['name'].toString(),
@@ -25,6 +27,7 @@ class ContactList extends StatelessWidget {
                     ),
                   ),
                 );
+                }
               },
               child: Padding(
                 padding: const EdgeInsets.fromLTRB(0, 6, 0, 6),
